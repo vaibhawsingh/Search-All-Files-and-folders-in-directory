@@ -4,7 +4,6 @@
 
 ## Search All Files and folders in directory
   - use below function to search all the files and folders in given path
-  
 <pre><code>
 findAllFileAndDir(CString strFolderPath, vector<CString>& vecDirNameLst, vector<CString>& vecFileNameLst)
 {
