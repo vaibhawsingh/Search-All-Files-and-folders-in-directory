@@ -23,12 +23,12 @@ findAllFileAndDir(CString strFolderPath, vector<CString>& vecDirNameLst, vector<
 		if ((fd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)/*&& strcmp(fd.cFileName, ".") && strcmp(fd.cFileName, "..")*/)
 		{
 			//read all directory
-      vecDirNameLst.push_back(fd.cFileName);
+      			vecDirNameLst.push_back(fd.cFileName);
 		}
 		else
 		{
 			//read all types of files
-      vecFileNameLst.push_back(fd.cFileName);
+      			vecFileNameLst.push_back(fd.cFileName);
 		}
 	} while (FindNextFile(hFind, &fd) != 0);
 	FindClose(hFind);
